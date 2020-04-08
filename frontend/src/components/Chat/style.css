@@ -1,0 +1,131 @@
+.chat-container {
+  width: 100%;
+  max-width: 800px;
+  height: 90vh;
+  background: #231F26;
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;  	
+  margin: auto;
+  padding: 15px 30px 15px 30px;
+  border: 1px solid #2c2a2d;
+  border-radius: 8px;
+}
+
+.chat-container .chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-container .watson-avatar {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #C4C4C4;
+  border-radius: 8px;
+}
+
+.chat-container .watson-avatar span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 59px;
+  color: #2071C1;
+}
+
+.chat-container .watson-informations {
+  display: grid;
+  flex: 1;
+  height: 50px;
+  padding: 0 0 0 8px;
+}
+
+.chat-container .watson-informations .name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 35px;
+  color: #2071C1;
+}
+
+.chat-container .watson-informations .description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 29px;
+  color: #6E6C70;
+  margin-top: -15px;
+}
+
+.chat-container .separator {
+  width: 100%;
+  height: 0px;
+  margin-top: 15px;
+  background: rgba(196, 196, 196, 0.01);
+  border: 1px solid #272429;
+}
+
+.messages-container {
+  padding: 0 0 15px 0;
+  height: 67vh;
+  overflow: scroll;
+}
+
+.messages-container::-webkit-scrollbar {
+  display: none;
+}
+
+.messages-container ul {
+  padding-inline-start: 0px !important;
+}
+
+.messages-container ul li {
+  color: #FFFFFF;
+  list-style: none;
+  padding: 10px;
+}
+
+.messages-container ul li + li {
+  margin-top: 3px;
+  border-radius: 12px 12px 12px 12px !important;
+}
+
+.messages-container .watson-message li {
+  background: #2071C1;
+  border-radius: 0px 12px 12px 12px;
+  width: fit-content;
+}
+
+.messages-container .user-message {
+  display: grid;
+  justify-content: end;
+}
+
+.messages-container .user-message li {
+  background: #776b6b;
+  border-radius: 12px 0px 12px 12px;
+  width: fit-content;
+}
+
+.chat-container .chat-box {
+  width: 100%;
+}
+
+.chat-container .chat-box input {
+  width: 100%;
+  height: 50px;
+  padding: 0 0 0 15px;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  background: #363239;
+  border: 1px solid #1C181F;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
