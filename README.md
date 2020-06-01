@@ -6,7 +6,6 @@ Integração entre Node.js e Watson Assistant com uma interface em ReactJS para 
 
 Para inciar o projeto será necessário:
 
-- Docker
 - Node
 - React
 - Yarn
